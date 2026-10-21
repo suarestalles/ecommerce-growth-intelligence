@@ -1,27 +1,28 @@
 E-commerce Growth Intelligence
-Documento Mestre do Projeto — Contexto, Arquitetura e Roadmap
+Project Master Document — Context, Architecture, and Roadmap
 
-Versão: 1.0
-Última atualização: 20/10/2026
-Status: Planejamento inicial
-Objetivo: Construir um projeto de portfólio profissional que demonstre competências em desenvolvimento de software, engenharia e análise de dados, Business Intelligence, e-commerce e marketing analytics.
+Version: 2.0
+Last Updated: October 21, 2026
+Status: Initial planning — dataset selected; implementation to be confirmed.
 
-1. CONTEXTO DO PROJETO
-Perfil profissional
+Objective: Build a professional portfolio project demonstrating skills in software development, data engineering, data analytics, business intelligence, e-commerce, and analytics engineering.
 
-O desenvolvedor responsável pelo projeto possui:
+1. PROJECT CONTEXT
+Professional Background
 
-Graduação em Análise e Desenvolvimento de Sistemas (ADS), no Brasil.
-Pós-graduação em Inteligência Artificial.
-Aproximadamente cinco anos de experiência profissional em desenvolvimento de sistemas.
-Experiência principal com Python e FastAPI.
-Experiência com Flutter.
-Experiência adicional com Next.js e Node.js.
-Residência atual na Espanha.
-Previsão de início de um Master em Marketing e E-commerce em Madrid no início de 2027.
-Objetivo de carreira
+The developer responsible for this project has:
 
-Conseguir uma oportunidade profissional na Espanha ou em outro mercado europeu, aproveitando a experiência prévia em desenvolvimento e expandindo a atuação para áreas como:
+A bachelor's-level degree in Systems Analysis and Development from Brazil.
+A postgraduate qualification in Artificial Intelligence.
+Approximately five years of professional software development experience.
+Primary experience with Python and FastAPI.
+Experience with Flutter.
+Additional experience with Next.js and Node.js.
+Current residence in Spain.
+Plans to begin a Master's program in Marketing and E-commerce in Madrid in early 2027.
+Career Objectives
+
+Secure a professional opportunity in Spain or another European market, leveraging existing software development experience while expanding into fields such as:
 
 Data Analytics.
 Analytics Engineering.
@@ -30,598 +31,721 @@ Data Engineering.
 Marketing Analytics.
 E-commerce Analytics.
 Marketing Technology (MarTech).
-Desenvolvimento de soluções de dados e IA.
+Data and AI solution development.
 
-O projeto deve ajudar a demonstrar competências relevantes para recrutadores europeus, sem posicionar o desenvolvedor como um profissional iniciante em tecnologia.
+The project should demonstrate the ability to solve practical data problems, build reproducible solutions, and communicate findings to both technical and business audiences.
 
-Estratégia
+The goal is not to position the developer as a beginner in technology, but to demonstrate a deliberate expansion of existing professional expertise into the data domain.
 
-Construir uma aplicação funcional que integre desenvolvimento de software, tratamento de dados, SQL, dashboards e análise de negócio.
+Strategy
 
-A prioridade é desenvolver um MVP simples, bem documentado, publicamente acessível e tecnicamente sólido, evitando funcionalidades desnecessárias.
+Build a functional application integrating software development, data processing, SQL, analytical modeling, dashboards, and business analysis.
 
-2. VISÃO DO PRODUTO
-Nome
+The priority is to deliver a simple, well-documented, publicly accessible, and technically sound MVP while avoiding unnecessary features.
+
+The project should demonstrate a complete workflow:
+
+Raw Data → Ingestion → Validation and Transformation → Analytical Modeling → Metrics → API → Dashboard → Business Insights.
+
+2. PRODUCT VISION
+Product Name
 
 E-commerce Growth Intelligence
 
-Descrição
+Description
 
-Uma plataforma de analytics para e-commerce que transforma dados operacionais de vendas e comportamento dos consumidores em indicadores, análises e recomendações para melhorar o desempenho comercial.
+An e-commerce analytics platform that transforms transactional data into metrics, analyses, and recommendations to improve commercial performance and understand customer purchasing behavior.
 
-A aplicação simula uma ferramenta de apoio à decisão utilizada por uma equipe de e-commerce, marketing ou gestão comercial.
+The application simulates a decision-support tool used by e-commerce, BI, and commercial management teams.
 
-Problema que o produto resolve
+Business Problem
 
-Empresas de comércio eletrônico acumulam dados de pedidos, produtos, clientes e pagamentos, mas precisam transformá-los em informações úteis para responder a perguntas como:
+E-commerce businesses accumulate large volumes of transaction data but need to transform them into actionable information to answer questions such as:
 
-Como estão evoluindo as vendas?
-Quais categorias e produtos apresentam melhor desempenho?
-Qual é o ticket médio?
-Como estão os prazos de entrega e a satisfação dos clientes?
-Quais clientes compram com frequência?
-Quais segmentos de clientes precisam de campanhas de reativação?
-Quais canais de marketing merecem maior investimento?
-Quais ações podem melhorar os resultados comerciais?
+How are sales evolving over time?
+Which products and categories generate the highest sales value?
+What is the average invoice value?
+Which geographic markets account for the largest share of sales?
+Which customers demonstrate higher purchase frequency and monetary value?
+Which customers have not purchased recently?
+What proportion of transactions involve cancellations?
+Are there observable patterns in seasonality, revenue concentration, or purchasing behavior?
+What commercial opportunities can be identified from historical data?
 
-O projeto deverá responder às perguntas sustentadas pelos dados disponíveis e identificar explicitamente quando não houver dados suficientes para uma conclusão.
+The project must answer questions supported by the available data and explicitly identify situations where the data is insufficient to support a conclusion.
 
-Público-alvo
-Recrutadores de tecnologia e dados.
-Empresas de e-commerce.
+Target Audience
+Technology and data recruiters.
+E-commerce companies.
+Retailers and distributors.
 Marketplaces.
-SaaS.
-Consultorias de dados.
-Agências de marketing digital.
-Equipes de BI, CRM, Growth e MarTech.
-Diferencial
+SaaS companies.
+Data consultancies.
+BI, CRM, and commercial management teams.
+Differentiation
 
-O projeto não será apenas um conjunto de gráficos.
+The project will not be merely a collection of charts. It must demonstrate a complete analytical workflow with documented business rules, reproducible transformations, automated tests, and verifiable results.
 
-Deverá demonstrar um fluxo completo:
+Recommendations must be derived from actual analyses rather than invented findings or correlations presented as proof of causation.
 
-Dados brutos → transformação → modelagem → indicadores → visualização → insights → recomendações de negócio.
+3. MVP SCOPE
+3.1. Executive Dashboard
 
-3. ESCOPO DO MVP
-Funcionalidades obrigatórias
-3.1. Dashboard executivo
+Display metrics such as:
 
-Apresentar indicadores como:
+Gross merchandise sales value, according to the adopted definition.
+Number of eligible invoices and orders.
+Number of units sold.
+Average invoice value.
+Monthly sales trends.
+Sales value by product.
+Sales distribution by country.
+Cancellation metrics.
+Number of identifiable customers.
+Customer distribution by purchase frequency and monetary value.
 
-Receita de vendas.
-Quantidade de pedidos.
-Ticket médio.
-Evolução mensal da receita.
-Distribuição das vendas por categoria.
-Distribuição geográfica dos pedidos.
-Indicadores de entrega.
-Avaliações dos clientes, quando disponíveis.
-3.2. Análise de produtos e vendas
+Metrics must use consistent filters and eligibility criteria. The interface must distinguish indicators calculated from complete data from those affected by missing records or dataset limitations.
 
-Permitir identificar:
+3.2. Product and Sales Analytics
 
-Categorias com maior volume de vendas.
-Produtos com melhor desempenho.
-Evolução das vendas ao longo do tempo.
-Distribuição do valor dos pedidos.
-Diferenças entre regiões.
+Enable users to identify:
 
-É necessário documentar as definições utilizadas para receita, pedidos e ticket médio, incluindo o tratamento de cancelamentos, reembolsos e pedidos incompletos, conforme as informações disponíveis no dataset.
+Products generating the highest sales value.
+Products with the highest quantities sold.
+Products appearing most frequently in invoices.
+Monthly sales trends.
+Transaction value distributions.
+Country-level sales contributions.
+Revenue concentration across products and customers.
+Observable seasonal patterns within the historical period.
+
+Definitions for sales value, invoices, units, and average invoice value must be documented.
+
+The dataset contains retail transactions, including wholesale activity. Results must not assume that every invoice represents a typical individual consumer purchase.
 
 3.3. Customer Intelligence
 
-Implementar segmentação de clientes utilizando RFM:
+Implement customer segmentation using RFM analysis when sufficient customer identifiers are available.
 
-Recency: tempo desde a última compra.
-Frequency: frequência de compras.
-Monetary: valor monetário das compras.
+Recency: Time since the customer's most recent purchase.
+Frequency: Number of eligible purchase invoices within the defined period.
+Monetary: Monetary value of the customer's eligible purchases.
 
-Criar segmentos interpretáveis, como clientes recentes, recorrentes, de alto valor e potencialmente inativos.
+Create interpretable segments such as recent customers, repeat customers, high-value customers, and potentially inactive customers.
 
-Os nomes, limites e regras de cada segmento deverão ser documentados. Não apresentar uma classificação heurística como se fosse um modelo preditivo validado.
+Calculation rules, segment thresholds, and the reference date must be documented.
 
-3.4. Insights de negócio
+Customer identifiers may be missing from some records. These records must be handled explicitly rather than grouped together as if they belonged to the same customer.
 
-Criar uma seção de análises que explique:
+RFM segmentation will be treated as a descriptive, heuristic method rather than a validated predictive model.
 
-O que foi observado.
-Qual indicador sustenta a conclusão.
-Qual período foi analisado.
-Quais são as limitações.
-Qual ação poderia ser testada pelo negócio.
+3.4. Cancellations and Commercial Data Quality
 
-As recomendações devem derivar de análises reproduzíveis, não de resultados inventados.
+Investigate cancelled invoices and other inconsistencies identified in the available fields.
 
-Funcionalidades opcionais
+The analysis must consider:
 
-Implementar somente depois que o MVP estiver funcional:
+Identification of invoices associated with cancellations.
+Negative quantities and potential returns.
+Missing, null, or invalid unit prices.
+Invoices without customer identifiers.
+Duplicate and inconsistent records.
+Differences between gross values, adjustments, and eligible sales metrics.
 
-Análise de campanhas de marketing.
-CAC, ROAS e LTV.
-Funil de conversão.
-Retenção e coortes.
-Previsão de vendas.
-Assistente de IA para gerar resumos executivos.
-Autenticação de usuários.
-Integração com APIs externas.
-Testes de hipóteses ou experimentos de marketing.
+Rules for excluding, retaining, or classifying records must be documented and tested.
 
-Essas funcionalidades não devem atrasar a primeira entrega.
+Negative quantities must not automatically be treated as complete cancellations without validating the meaning of the corresponding records.
 
-4. FONTES DE DADOS
-Dataset principal
+3.5. Business Insights
 
-Brazilian E-Commerce Public Dataset by Olist.
+Create an analytical section explaining:
 
-Link: https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce
+What was observed.
+Which metric supports the finding.
+Which period was analyzed.
+Which rules and filters were applied.
+What limitations affect the conclusion.
+Which business action could be tested.
 
-Motivo da escolha
+Recommendations must be reproducible and consistent with the available data.
 
-O dataset oferece dados relacionais de e-commerce e permite explorar:
+Optional Features
 
-Clientes.
-Pedidos.
-Itens dos pedidos.
-Produtos.
-Pagamentos.
-Avaliações.
-Vendedores.
-Localização e dados geográficos.
-Datas de compra, aprovação e entrega.
+Implement only after the MVP is functional:
 
-Isso possibilita demonstrar SQL, modelagem relacional, transformação de dados, indicadores e análise comercial sem precisar construir um sistema de coleta de dados do zero.
+Cohort and retention analysis.
+Sales forecasting.
+Revenue concentration analysis.
+Additional customer segmentation.
+An optional BI layer using external tools.
+An AI assistant for executive summaries.
+Additional datasets for marketing analytics.
+Business hypothesis testing or experimentation.
 
-Cuidados com os dados
-Verificar os termos de uso e a licença antes da publicação.
-Documentar a origem dos dados.
-Não tratar os dados como dados reais de uma empresa contratante.
-Não presumir que existam custos de campanhas de marketing.
-Não calcular CAC ou ROAS sem os dados necessários.
-Identificar claramente quaisquer dados sintéticos adicionados.
-Documentar limitações, valores ausentes e regras de limpeza.
-Dados adicionais de marketing
+CAC, ROAS, and visitor-to-buyer conversion are outside the initial scope because they require acquisition, advertising spend, traffic, or attribution data that the primary dataset does not directly provide.
 
-Se necessário, criar um pequeno dataset sintético contendo:
+These features may only be implemented using suitable additional data sources or clearly labeled synthetic data.
 
-Data.
-Canal de aquisição.
-Investimento publicitário.
-Impressões.
-Cliques.
-Conversões atribuídas.
-Receita atribuída.
+4. DATA SOURCE
+Primary Dataset
 
-Os dados devem ser marcados como simulados e utilizados apenas para demonstrar a lógica dos indicadores.
+Online Retail II — UCI Machine Learning Repository
 
-Os resultados sintéticos não poderão ser apresentados como evidências reais do dataset Olist.
+Official page:
 
-5. STACK TECNOLÓGICA
+https://archive.ics.uci.edu/dataset/502/online+retail+ii
+
+Original file provided by the repository: online_retail_II.xlsx.
+
+General Characteristics
+
+The dataset contains approximately 1.07 million transaction records from a UK-based retailer, covering the period from December 1, 2009, to December 9, 2011.
+
+The main fields include:
+
+Invoice: Invoice identifier.
+StockCode: Product identifier.
+Description: Product description.
+Quantity: Number of units.
+InvoiceDate: Transaction date and time.
+Price: Unit price.
+Customer ID: Customer identifier.
+Country: Country associated with the transaction.
+
+The file contains records requiring data preparation, including missing values, negative quantities, and invoice identifiers that may indicate cancellations.
+
+The actual schema and data characteristics must be verified during the data exploration phase.
+
+Rationale for Selection
+
+The dataset supports analysis of:
+
+Sales and sales value.
+Products and quantities.
+Transaction history.
+Customers and repeat purchasing.
+Geographic distribution.
+Temporal patterns.
+Cancellations and commercial data inconsistencies.
+Analytical modeling and RFM segmentation.
+
+It provides opportunities to demonstrate Python, pandas, SQL, PostgreSQL, dimensional modeling, data quality practices, and analytical visualization.
+
+The selection also differentiates this project from another project that uses the Brazilian E-Commerce Public Dataset by Olist.
+
+License and Attribution
+
+The UCI repository identifies the dataset under the CC BY 4.0 license.
+
+Project documentation must preserve attribution to the original source and include the official dataset URL.
+
+Before redistributing the data, the applicable terms must be reviewed in the context of the intended distribution method.
+
+Data Handling Principles
+Preserve the original file without modifications.
+Document the source, period, and license.
+Do not assume that every record represents an independent order.
+Do not assume that every invoice represents a consumer purchase.
+Identify cancelled invoices using documented rules.
+Handle negative quantities and other adjustments carefully.
+Document missing values, duplicates, and inconsistencies.
+Do not confuse gross merchandise sales value with net revenue or profit.
+Do not assume that the dataset contains costs, margins, operating expenses, or marketing spend.
+Do not present historical findings as current market benchmarks.
+Do not publish raw data on GitHub without an explicit and justified decision.
+Local Data Storage
+
+The dataset must be downloaded and processed locally.
+
+The application must not depend on Google Cloud authentication, external query services, or cloud credentials to run the MVP.
+
+The ingestion process must be reproducible from the original file using instructions documented in the repository.
+
+5. TECHNOLOGY STACK
 Backend
 Python.
 FastAPI.
 Pydantic.
-SQLAlchemy, se adequado à implementação.
+SQLAlchemy, if appropriate for the implementation.
 pytest.
 
-Responsabilidades:
+Responsibilities:
 
-Expor os indicadores através de endpoints.
-Validar parâmetros e filtros.
-Centralizar a lógica de negócio.
-Consultar a camada analítica.
-Documentar a API com OpenAPI.
-Disponibilizar mensagens de erro consistentes.
-Banco de dados
+Expose metrics through REST endpoints.
+Validate parameters and filters.
+Centralize business logic that needs to be shared.
+Query the analytical layer.
+Document the API using OpenAPI.
+Provide consistent responses and error messages.
+Database
+
 PostgreSQL.
 
-Responsabilidades:
+Responsibilities:
 
-Armazenar dados preparados.
-Disponibilizar tabelas analíticas.
-Executar consultas SQL.
-Sustentar os indicadores do dashboard.
-Processamento de dados
+Store prepared data.
+Provide analytical tables.
+Execute SQL queries.
+Support dashboard metrics.
+Enable validation of result consistency.
+Data Processing
 Python.
 pandas.
 SQL.
 
-Responsabilidades:
+Responsibilities:
 
-Ler os arquivos originais.
-Validar e limpar os dados.
-Tratar datas, valores ausentes e duplicidades.
-Criar tabelas de preparação.
-Produzir tabelas analíticas reproduzíveis.
+Read the original file.
+Validate the schema and field types.
+Handle dates, missing values, and duplicates.
+Classify cancellations and adjustments using documented rules.
+Produce staging tables.
+Build reproducible analytical tables.
+Record relevant execution results and errors.
 Frontend
 Next.js.
 TypeScript.
-Uma biblioteca de gráficos, como Recharts.
-Uma solução de estilização consistente, como Tailwind CSS.
+A charting library such as Recharts.
+A consistent styling solution such as Tailwind CSS.
 
-Responsabilidades:
+Responsibilities:
 
-Apresentar o dashboard.
-Implementar filtros.
-Consumir a API FastAPI.
-Exibir indicadores, gráficos e insights.
-Oferecer uma interface responsiva.
-Infraestrutura e qualidade
-Git e GitHub.
-Docker e Docker Compose.
+Present the dashboard.
+Implement filters.
+Consume the FastAPI.
+Display metrics, charts, and insights.
+Provide a responsive interface.
+Handle loading states, empty results, and errors.
+Infrastructure and Quality
+Git and GitHub.
+Docker and Docker Compose.
 pytest.
-Testes de integração.
-Variáveis de ambiente.
-CI com GitHub Actions, se viável.
-Deploy público do frontend e backend.
-Decisões de escopo
-Não utilizar Flutter na primeira versão, pois o foco é um dashboard web.
-Não introduzir Node.js como backend adicional.
-Não implementar microsserviços.
-Não adicionar autenticação sem uma necessidade concreta.
-Não introduzir Airflow, Kafka ou infraestrutura distribuída no MVP.
-Não adicionar IA antes de validar os indicadores e a qualidade dos dados.
+Integration tests.
+Environment variables.
+CI with GitHub Actions, where feasible.
+Public deployment of the frontend and backend.
+Scope Decisions
+Do not use Flutter in the first version.
+Do not introduce an additional Node.js backend.
+Do not implement microservices.
+Do not add authentication without a concrete need.
+Do not introduce Airflow, Kafka, or distributed infrastructure in the MVP.
+Do not add AI before validating the metrics and data quality.
+Do not introduce additional transformation tools without a demonstrated need.
+Do not create architectural layers without clear responsibilities.
 
-O objetivo é demonstrar capacidade técnica e julgamento de engenharia, não acumular tecnologias no currículo.
+The goal is to demonstrate technical competence and sound engineering judgment, not to accumulate technologies for a résumé.
 
-6. ARQUITETURA PROPOSTA
+6. PROPOSED ARCHITECTURE
+Main Workflow
+The original file is obtained from the UCI Machine Learning Repository.
+A Python pipeline reads and validates the data.
+Prepared data is loaded into PostgreSQL.
+The analytical layer provides tables and queries for metrics.
+The FastAPI backend exposes metrics through REST endpoints.
+The Next.js frontend queries the API.
+Users apply filters and explore the results.
+The insights section presents data-driven interpretations.
 
-Fluxo principal:
+The first version will use a simple architecture consisting of one backend, one frontend, and one PostgreSQL database.
 
-Os arquivos CSV originais são obtidos a partir do dataset.
-Um pipeline Python valida, limpa e transforma os dados.
-Os dados preparados são carregados no PostgreSQL.
-A camada analítica disponibiliza tabelas e consultas para os indicadores.
-O backend FastAPI expõe os indicadores por endpoints REST.
-O frontend Next.js consulta a API.
-O usuário aplica filtros e visualiza os resultados.
-A seção de insights apresenta interpretações fundamentadas nos dados.
+Implementation must respect the existing repository structure. New modules should only be created when there is a concrete responsibility to implement.
 
-A primeira versão pode utilizar uma arquitetura simples, com um único backend, um único frontend e um banco PostgreSQL.
+Data Modeling
 
-Modelagem de dados
+The final data model must be defined after inspecting the original file and formalizing the business rules.
 
-A modelagem analítica deve ser definida depois de inspecionar as tabelas originais.
+A candidate structure includes:
 
-Uma estrutura candidata é:
+stg_online_retail: Imported data normalized for preparation.
+fact_sales: Eligible sales records, preserving the documented grain.
+fact_invoices: Invoice-level aggregated metrics, if needed.
+dim_products: Product information.
+dim_customers: Information about identifiable customers.
+dim_country: Available geographic information.
+dim_date: Analytical calendar.
+customer_rfm: Customer metrics and segments calculated for a reference date.
 
-fact_orders: dados de pedidos e valores agregados.
-fact_order_items: itens de cada pedido.
-dim_customers: informações dos clientes.
-dim_products: informações dos produtos.
-dim_sellers: informações dos vendedores.
-dim_date: calendário analítico.
-fact_marketing_campaigns: dados sintéticos opcionais de campanhas.
+These tables are proposals, not implemented structures.
 
-A estrutura definitiva dependerá das regras de negócio e dos dados efetivamente disponíveis.
+The data model must explicitly define the grain of each table and prevent joins from multiplying quantities or monetary values.
 
-É importante evitar duplicação de valores: por exemplo, associar um pedido a vários itens e depois somar repetidamente o total do pedido pode inflar a receita.
+Records without customer identifiers may contribute to certain sales analyses but must not be treated as identifiable customers in repeat-purchase analyses.
 
-Os indicadores devem respeitar o nível de granularidade de cada tabela.
+Raw and Processed Data
 
-7. ESTRUTURA INICIAL DO REPOSITÓRIO
+The data structure must clearly separate original files from derived artifacts:
 
-Estrutura proposta para um monorepo:
+data/raw/: Original source file.
+data/processed/: Prepared data, where necessary.
 
-ecommerce-growth-intelligence/
-├── README.md
-├── docker-compose.yml
-├── .env.example
-├── .gitignore
-├── docs/
-│   ├── PROJECT_BRIEF.md
-│   ├── ROADMAP.md
-│   ├── DATA_DICTIONARY.md
-│   ├── BUSINESS_METRICS.md
-│   ├── ARCHITECTURE.md
-│   └── DECISIONS.md
-├── data/
-│   ├── raw/
-│   ├── processed/
-│   └── README.md
-├── notebooks/
-│   └── exploratory_analysis.ipynb
-├── scripts/
-│   └── load_data.py
-├── sql/
-│   ├── staging/
-│   ├── marts/
-│   └── analysis/
-├── backend/
-│   ├── app/
-│   │   ├── main.py
-│   │   ├── api/
-│   │   ├── core/
-│   │   ├── schemas/
-│   │   ├── services/
-│   │   └── repositories/
-│   ├── tests/
-│   ├── requirements.txt
-│   └── Dockerfile
-├── frontend/
-│   ├── app/
-│   ├── components/
-│   ├── lib/
-│   ├── public/
-│   ├── package.json
-│   └── Dockerfile
-└── .github/
-    └── workflows/
+Final directory names must be aligned with the actual repository structure before existing files are moved.
 
+Large raw datasets and processed artifacts must not be committed to Git without explicit justification.
 
-Essa estrutura é uma proposta inicial, não uma obrigação de criar todos os diretórios no primeiro dia.
+7. REPOSITORY STRUCTURE
 
-O repositório deverá evoluir de acordo com as necessidades reais. Não criar arquivos vazios ou camadas arquiteturais sem propósito.
+The repository already has an initial monorepo structure containing the backend, frontend, data, documentation, scripts, and SQL directories.
 
-Os dados brutos não devem ser enviados ao GitHub sem verificar tamanho, licença e necessidade. O arquivo .gitignore deverá impedir a publicação acidental de datasets e segredos.
+Organization must evolve from the existing directories:
 
-8. API: PRIMEIROS ENDPOINTS PROPOSTOS
+docs/: Project documentation.
+data/: Raw and processed data.
+scripts/: Ingestion and execution scripts.
+sql/: Staging queries, analytical models, and analyses.
+backend/: FastAPI application and tests.
+frontend/: Next.js application.
+.env.example: Example configuration.
+.gitignore: Exclusion of data, secrets, and generated files.
+README.md: Project overview and setup instructions.
 
-A API poderá começar com os seguintes endpoints:
+The detailed structure must be confirmed against the actual repository files.
+
+Do not create empty directories, duplicate data structures, or reorganize modules without a technical need.
+
+8. PROPOSED API ENDPOINTS
+
+The API may initially include the following endpoints:
 
 GET /health
 
-Verifica se o serviço está operacional.
+Checks whether the service is operational.
 
 GET /api/v1/overview
 
-Retorna os principais KPIs.
+Returns the main KPIs.
 
 GET /api/v1/sales/trends
 
-Retorna a evolução das vendas por período.
+Returns sales trends over time.
 
-GET /api/v1/sales/categories
+GET /api/v1/sales/products
 
-Retorna indicadores por categoria de produto.
+Returns product-level metrics.
+
+GET /api/v1/sales/countries
+
+Returns country-level metrics.
 
 GET /api/v1/customers/segments
 
-Retorna a distribuição de clientes por segmento RFM.
+Returns the distribution of customers across RFM segments.
 
-GET /api/v1/orders/delivery
+GET /api/v1/invoices/cancellations
 
-Retorna indicadores de entrega.
+Returns cancellation and adjustment metrics according to the defined rules.
 
 GET /api/v1/insights
 
-Retorna os insights de negócio calculados.
+Returns insights derived from the analyses.
 
-Os parâmetros de filtro poderão incluir datas, categoria e região, quando forem relevantes para o endpoint.
+Filters may include dates, products, countries, and other relevant fields.
 
-As respostas devem ter contratos documentados, tipos definidos e testes.
+These endpoints are initial candidates and may be adjusted during development.
 
-Os endpoints são candidatos iniciais e poderão ser ajustados durante o desenvolvimento.
+Responses must have documented contracts, defined types, and automated tests.
 
-9. MÉTRICAS E DEFINIÇÕES DE NEGÓCIO
+9. BUSINESS METRICS AND DEFINITIONS
 
-Criar um documento BUSINESS_METRICS.md com as definições exatas.
+The BUSINESS_METRICS.md document must record the exact definition of each metric.
 
-Exemplos:
+Sales and Sales Value
 
-Receita de vendas: valor definido a partir dos dados disponíveis, com regras documentadas para cancelamentos, pagamentos e reembolsos.
+Gross merchandise sales value: The sum of values calculated from quantity multiplied by unit price for eligible records, according to the documented rules.
 
-Quantidade de pedidos: número distinto de pedidos elegíveis para a análise.
+Number of invoices: The distinct count of eligible invoices, with cancellations handled explicitly.
 
-Ticket médio: receita elegível dividida pela quantidade de pedidos elegíveis, respeitando o mesmo período e universo de pedidos.
+Units sold: The sum of quantities for eligible sales records, according to the adopted policy for adjustments and returns.
 
-Atraso de entrega: diferença entre a data estimada e a data efetiva de entrega, quando ambas estiverem disponíveis.
+Average invoice value: Eligible gross merchandise sales value divided by the number of eligible invoices, using the same record population.
 
-RFM: segmentação por recência, frequência e valor monetário, calculados para uma data de referência definida.
+Sales by period: Aggregation of sales by transaction date, using consistent calendar rules and filters.
 
-CAC: investimento de aquisição dividido pela quantidade de novos clientes atribuídos à aquisição, quando houver dados suficientes.
+The project must not automatically label these metrics as net revenue, accounting revenue, or profit, because the dataset does not contain all the components needed to calculate those measures.
 
-ROAS: receita atribuída à publicidade dividida pelo investimento publicitário correspondente.
+Customer Metrics
 
-LTV: valor de cliente ao longo do relacionamento, cuja definição dependerá do horizonte temporal e do método de cálculo.
+Recency: The difference between the reference date and the customer's most recent eligible purchase date.
 
-Não assumir que faturamento, valor de pedidos, pagamentos recebidos e receita líquida são conceitos equivalentes.
+Frequency: The number of eligible purchase invoices for a customer within the defined period.
 
-10. ROADMAP E TIMELINE
-Fase 0 — Planejamento
+Monetary: The cumulative monetary value of a customer's eligible purchases, according to the adopted definition.
 
-Status: EM ANDAMENTO.
+Repeat-purchase rate: The proportion of identifiable customers with at least two eligible purchases, using an explicitly defined population and observation window.
 
-Definir o objetivo profissional.
-Definir o conceito do produto.
-Escolher o dataset inicial.
-Propor a stack tecnológica.
-Definir o escopo preliminar.
-Criar o documento mestre.
-Confirmar o ambiente de desenvolvimento.
-Criar o repositório GitHub.
-Fase 1 — Exploração dos dados
+Customer segmentation must include only identifiable customers and document the reference date.
 
-Previsão: dias 1–2.
+Cancellations and Adjustments
 
-Baixar e inspecionar o dataset.
-Documentar as tabelas e colunas.
-Identificar chaves primárias e relacionamentos.
-Investigar valores ausentes e duplicidades.
-Definir as regras iniciais de negócio.
-Produzir o dicionário de dados.
+Cancellation identification must use fields and patterns found in the original file, including invoice identifiers.
 
-Critério de conclusão: compreender as tabelas e documentar as principais limitações dos dados.
+Negative quantities and cancellation-related records must be investigated before any automatic exclusion or classification.
 
-Fase 2 — Banco de dados e pipeline
+Adopted rules must be documented, reproducible, and tested.
 
-Previsão: dias 3–4.
+Metrics Not Directly Available
 
-Criar o ambiente PostgreSQL.
-Implementar o carregamento dos dados.
-Criar as transformações necessárias.
-Definir a modelagem analítica.
-Implementar validações.
-Documentar as métricas.
+CAC: Requires acquisition spend and consistent identification of customers attributed to that spend.
 
-Critério de conclusão: pipeline reproduzível e dados disponíveis para consulta SQL.
+ROAS: Requires advertising spend and revenue attributed to advertising according to a defined attribution rule.
 
-Fase 3 — Análises SQL
+Visitor-to-buyer conversion: Requires visitor or session data and purchases linked consistently.
 
-Previsão: dias 5–6.
+Predictive LTV: Requires a validated forecasting methodology and suitable data. Historical customer spend must not be presented as a predictive LTV estimate.
 
-Consultas de receita e pedidos.
-Evolução temporal.
-Desempenho por categoria.
-Análise de entrega e avaliações.
-Segmentação RFM.
-Identificação de pelo menos três insights sustentados pelos dados.
+These metrics must not be invented or inferred from fields that do not support their definitions.
 
-Critério de conclusão: indicadores reproduzíveis e resultados documentados.
+10. ROADMAP AND TIMELINE
 
-Fase 4 — Backend
+The following estimates must be updated according to actual progress.
 
-Previsão: dias 7–8.
+Phase 0 — Planning
 
-Criar aplicação FastAPI.
-Implementar endpoints.
-Criar schemas de resposta.
-Implementar filtros.
-Adicionar testes.
-Documentar a API.
+Status: Initial planning; completion to be confirmed.
 
-Critério de conclusão: endpoints funcionais e testados.
+Define the career objective.
+Define the product concept.
+Select the dataset.
+Define the technology stack.
+Establish the preliminary scope.
+Create the initial documentation.
+Confirm the development environment.
+Prepare the GitHub repository.
 
-Fase 5 — Frontend e dashboard
+Completion criteria: Initial scope and decisions documented, with the environment and repository verified.
 
-Previsão: dias 9–11.
+Phase 1 — Data Exploration
 
-Criar aplicação Next.js.
-Implementar layout.
-Criar cards de KPIs.
-Criar gráficos.
-Conectar o frontend à API.
-Implementar filtros.
-Tratar carregamento e erros.
-Validar a experiência em dispositivos diferentes.
-
-Critério de conclusão: dashboard funcional utilizando dados reais do dataset.
+Estimated duration: Days 1–2.
 
-Fase 6 — Qualidade e publicação
+Download the original file.
+Inspect the schema, fields, and data types.
+Confirm the historical period and record count.
+Identify missing values and duplicates.
+Investigate cancelled invoices and negative quantities.
+Define initial business rules.
+Update the data dictionary.
+Document limitations.
 
-Previsão: dias 12–14.
+Completion criteria: Data structure understood, major data quality issues identified, and initial rules documented.
 
-Revisar testes.
-Configurar Docker Compose.
-Configurar variáveis de ambiente.
-Revisar o README em inglês.
-Criar capturas de tela.
-Publicar frontend e backend.
-Gravar uma demonstração curta.
-Adicionar o projeto ao currículo e ao LinkedIn.
+Phase 2 — Database and Pipeline
 
-Critério de conclusão: outra pessoa consegue compreender o projeto, executá-lo seguindo a documentação e experimentar a aplicação publicada.
+Estimated duration: Days 3–4.
 
-Fase 7 — Evolução estratégica
+Configure PostgreSQL.
+Implement data loading.
+Create the required transformations.
+Define the analytical model.
+Implement validations.
+Add tests for critical business rules.
+Document metrics.
 
-Executar depois do MVP.
+Completion criteria: Reproducible pipeline and prepared data available for SQL queries.
 
-Adicionar um conjunto sintético de campanhas.
-Demonstrar CAC e ROAS com ressalvas documentadas.
-Desenvolver análises de coorte e retenção.
-Adicionar uma camada opcional de BI.
-Avaliar dbt para transformação e testes SQL.
-Adicionar geração de resumos com IA.
-Melhorar a infraestrutura conforme necessário.
-Observação sobre a timeline
+Phase 3 — SQL Analytics
 
-Os prazos são estimativas. O objetivo é entregar um MVP em aproximadamente duas semanas de trabalho focado, não cumprir datas artificialmente.
+Estimated duration: Days 5–6.
 
-Se alguma fase exigir mais tempo, atualizar o status e a previsão, sem comprometer a qualidade dos dados ou a clareza das métricas.
+Sales and invoice queries.
+Time-series analysis.
+Product performance.
+Geographic analysis.
+RFM segmentation.
+Cancellation and adjustment analysis.
+Identify at least three data-supported business insights.
 
-11. PADRÕES DE DESENVOLVIMENTO
-Implementar uma etapa de cada vez.
-Priorizar entregas pequenas e funcionais.
-Explicar decisões arquiteturais relevantes.
-Não criar funcionalidades antes de validar sua necessidade.
-Escrever testes para regras de negócio importantes.
-Não inventar dados, resultados ou benchmarks.
-Não publicar credenciais ou segredos.
-Manter o README atualizado.
-Usar nomes claros para variáveis, funções, tabelas e endpoints.
-Escrever a documentação do projeto em inglês, visando recrutadores internacionais.
-Manter as explicações e o planejamento em português, salvo solicitação contrária.
-Atualizar este documento quando houver mudanças relevantes na arquitetura, no escopo ou no status.
-Critério para considerar uma tarefa concluída
+Completion criteria: Reproducible metrics, validated results, and documented analyses.
 
-Uma tarefa só deve ser marcada como concluída quando:
+Phase 4 — Backend
 
-A implementação estiver pronta.
-Os testes pertinentes passarem.
-A validação dos resultados estiver feita.
-A documentação necessária estiver atualizada.
+Estimated duration: Days 7–8.
 
-Se uma etapa não tiver sido executada no ambiente real, ela deve permanecer pendente, mesmo que o código tenha sido sugerido ou escrito em uma conversa.
+Implement the FastAPI application.
+Create endpoints.
+Define response schemas.
+Implement filters.
+Add tests.
+Document the API.
 
-12. CONTROLE DE PROGRESSO ENTRE CONVERSAS
+Completion criteria: Functional, documented, and tested endpoints.
 
-Este documento é a fonte principal de contexto do projeto.
+Phase 5 — Frontend and Dashboard
+
+Estimated duration: Days 9–11.
 
-Ao iniciar uma nova conversa, o desenvolvedor deverá enviar este documento e, se possível, o estado atual do repositório, os arquivos relevantes e a saída dos últimos testes.
+Build the dashboard layout.
+Implement KPI cards.
+Create charts.
+Connect the frontend to the API.
+Implement filters.
+Handle loading states and errors.
+Validate the experience across different devices.
 
-O assistente deverá:
+Completion criteria: Functional dashboard using prepared dataset records.
 
-Ler o documento antes de sugerir mudanças.
-Identificar a última fase concluída.
-Verificar as tarefas pendentes.
-Continuar a partir da próxima tarefa concreta.
-Evitar repetir etapas já concluídas.
-Respeitar as tecnologias e decisões existentes.
-Sugerir alterações no documento mestre quando necessário.
-Atualizar a timeline somente com informações confirmadas.
-Não afirmar que comandos foram executados ou testes passaram sem evidências.
-Preferir mudanças pequenas e verificáveis.
-Registro de sessões
+Phase 6 — Quality and Deployment
 
-Ao final de cada sessão de desenvolvimento, registrar:
+Estimated duration: Days 12–14.
 
-Data.
-Objetivo da sessão.
-Arquivos criados ou modificados.
-Decisões técnicas tomadas.
-Comandos executados.
-Testes realizados e resultados.
-Problemas encontrados.
-Próxima tarefa recomendada.
-13. ESTADO ATUAL DO PROJETO
+Review tests.
+Configure Docker Compose.
+Review environment variables.
+Review the documentation in English.
+Create screenshots.
+Deploy the frontend and backend.
+Record a short demonstration.
+Add the project to the résumé and LinkedIn profile.
 
-Última atualização: 20/10/2026.
+Completion criteria: Another person can understand the project, run its components by following the instructions, and try the deployed application.
 
-Fase atual: Fase 0 — Planejamento.
+Phase 7 — Strategic Enhancements
 
-Status de implementação: ainda não confirmado.
+Execute after the MVP.
 
-Repositório GitHub: não informado.
+Add cohort and retention analysis.
+Evaluate dbt for transformation and SQL testing.
+Explore forecasting models when sufficient data and validation are available.
+Integrate complementary marketing data if there is a concrete need.
+Add AI-generated summaries.
+Improve infrastructure according to actual requirements.
+Timeline Notes
 
-Ambiente de desenvolvimento: não informado.
+The goal is to deliver an MVP in approximately two focused weeks of work without compromising metric quality or clarity of business rules.
 
-Banco de dados: não configurado ou ainda não confirmado.
+If a phase requires more time, update its status and estimated duration instead of marking incomplete tasks as finished.
 
-Dataset: escolhido, mas download e inspeção ainda não confirmados.
+11. DEVELOPMENT STANDARDS
+Implement one stage at a time.
+Prioritize small, functional deliverables.
+Explain relevant architectural decisions.
+Do not create features before validating their need.
+Write tests for important business rules.
+Do not invent data, results, or benchmarks.
+Never publish credentials or secrets.
+Keep the README up to date.
+Use clear names for variables, functions, tables, and endpoints.
+Write the final project documentation in English to target international recruiters.
+Keep planning and development explanations in Portuguese unless requested otherwise.
+Update this document when the scope, architecture, or status changes significantly.
+Do not mark a task as complete without evidence of implementation and validation.
+Definition of Done
 
-Backend: não implementado ou ainda não confirmado.
+A task is complete only when:
 
-Frontend: não implementado ou ainda não confirmado.
+The implementation is finished.
+Relevant tests pass.
+Results have been validated.
+Required documentation has been updated.
 
-Deploy: não iniciado ou ainda não confirmado.
+If a step has not been executed in the actual environment, it must remain pending, even if code has been suggested or written in a conversation.
 
-Próxima ação recomendada: verificar o ambiente disponível, criar o repositório e iniciar a inspeção do dataset antes de definir a modelagem definitiva.
+12. PROGRESS TRACKING ACROSS CONVERSATIONS
 
-14. INSTRUÇÃO PARA CONTINUAR O PROJETO EM OUTRO CHAT
+This document is the primary source of project context.
 
-Estamos desenvolvendo o E-commerce Growth Intelligence, um projeto de portfólio profissional para demonstrar competências em Python, FastAPI, SQL, PostgreSQL, Next.js, análise de dados, BI, e-commerce e marketing analytics.
+When starting a new conversation, the developer should provide this document and, where possible, the current repository state, relevant files, and the latest test results.
 
-Leia este documento integralmente e use-o como contexto principal.
+The assistant must:
 
-Antes de propor qualquer implementação:
+Read this document before suggesting changes.
+Identify the latest completed phase.
+Review pending tasks.
+Consider only tasks with evidence of completion.
+Propose the next concrete task.
+Avoid repeating completed steps.
+Respect existing technologies and decisions.
+Suggest updates to the master document when necessary.
+Update the timeline only with confirmed information.
+Never claim that commands were executed or tests passed without evidence.
+Prefer small, verifiable changes.
 
-Identifique a fase atual na seção 13.
-Consulte a timeline na seção 10.
-Considere apenas tarefas comprovadamente concluídas.
-Proponha a próxima tarefa de forma incremental.
-Explique o objetivo, os arquivos envolvidos e os critérios de validação.
-Quando houver código, forneça instruções executáveis e explique como verificar o resultado.
-Ao final da sessão, apresente um resumo atualizado do progresso e as mudanças necessárias neste documento.
+At the end of each development session, record:
 
-Não recomece o projeto do zero. Não assuma que arquivos, bancos de dados, ambientes ou serviços foram criados se isso não estiver documentado.
+Date.
+Session objective.
+Files created or modified.
+Technical decisions made.
+Commands executed.
+Tests performed and results.
+Issues encountered.
+Recommended next task.
+13. CURRENT PROJECT STATUS
 
-Objetivo imediato: sair do planejamento e começar a implementar o projeto, começando pelo ambiente de desenvolvimento e pela exploração dos dados.
+Last documentation update: October 21, 2026.
+
+Current phase: Planning and documentation alignment.
+
+Selected dataset: Online Retail II — UCI Machine Learning Repository.
+
+Dataset download and inspection: Not yet confirmed.
+
+GitHub repository: An initial structure has been described; the current state of files must be verified.
+
+Development environment: Initial structure described; complete configuration to be confirmed.
+
+Database: Not configured or not yet confirmed.
+
+Ingestion pipeline: Not implemented or not yet confirmed.
+
+Backend: Initial FastAPI structure described; functionality to be confirmed.
+
+Frontend: Initial Next.js structure described; functionality to be confirmed.
+
+Deployment: Not started or not yet confirmed.
+
+Recommended next action: Complete documentation alignment with Online Retail II, download and inspect the original file, and define data quality rules before implementing the pipeline.
+
+
+### Current Status — 2026-10-21
+
+**Current phase:** Phase 1 — Data Exploration.
+
+**Dataset:** Online Retail II, UCI Machine Learning Repository.
+
+**Confirmed progress:**
+
+- Original workbook downloaded and read successfully.
+- Both worksheets and the expected schema verified.
+- Initial profiling and data quality investigation scripts executed.
+- Missing customer identifiers, duplicate groups, negative quantities, cancellation identifiers, zero prices, and financial adjustment candidates identified.
+- Raw dataset exclusion from Git verified.
+
+**Not yet confirmed as complete:**
+
+- Final business rules for sales eligibility.
+- Final cancellation and adjustment classification.
+- Deduplication policy.
+- Production ingestion pipeline.
+- PostgreSQL schema and analytical model.
+- Automated validation suite.
+- Backend, frontend, and deployment.
+
+**Immediate next action:** Finish investigating cancellation relationships and operational adjustments, then formalize the initial business metrics and data quality rules before implementing the ingestion pipeline.
+
+
+14. INSTRUCTIONS FOR CONTINUING THE PROJECT IN A NEW CHAT
+
+We are developing E-commerce Growth Intelligence, a professional portfolio project demonstrating skills in Python, FastAPI, SQL, PostgreSQL, Next.js, data analytics, BI, e-commerce, and analytics engineering.
+
+The selected primary dataset is Online Retail II, provided by the UCI Machine Learning Repository:
+
+https://archive.ics.uci.edu/dataset/502/online+retail+ii
+
+Read this document in full and use it as the primary source of project context.
+
+Before proposing any implementation:
+
+Identify the current phase in Section 13.
+Review the roadmap in Section 10.
+Consider only tasks confirmed as completed.
+Propose the next task incrementally.
+Explain the objective, affected files, and validation criteria.
+When providing code, include executable instructions and explain how to verify the results.
+At the end of the session, summarize progress and identify any required changes to this document.
+
+Do not restart the project from scratch. Do not assume that files, databases, environments, or services have been created unless documented.
+
+The dataset must be processed locally, without requiring Google Cloud authentication for the MVP.
+
+Immediate objective: Complete documentation alignment and begin data exploration, validating the actual file structure before finalizing the ingestion pipeline and analytical model.
